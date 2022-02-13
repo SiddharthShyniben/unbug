@@ -1,0 +1,10 @@
+{
+  "name": "unbug",
+  "version": "1.0.0",
+  "description": "A feature packed debugging tool",
+  "main": "index.js",
+  "scripts": {},
+  "type": "module",
+  "author": "Siddharth Shyniben <siddharth.muscat@gmail.com>",
+  "license": "GPL-3.0"
+}
