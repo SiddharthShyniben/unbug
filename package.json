@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "A feature packed debugging tool",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "rollup -c && npm run minify",
+    "minify": "terser -c -m -o dist/index.min.js dist/index.js && rm dist/index.js"
+  },
   "type": "module",
   "author": "Siddharth Shyniben <siddharth.muscat@gmail.com>",
   "license": "GPL-3.0"
