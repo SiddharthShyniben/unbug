@@ -1,4 +1,4 @@
-const falsyStrings = ['0', 'false', 'no', '0', 'nah', 'nope', 'n', 'noway', 'never', 'naw', 'nay'];
+const falsyStrings = ['false', 'no', '0', 'nah', 'nope', 'n', 'noway', 'never', 'naw', 'nay'];
 
 export default {
 	colors: [

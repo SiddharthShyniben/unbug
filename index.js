@@ -54,7 +54,7 @@ function logHandler(scope, debugs, debugId, kolor) {
 			);
 
 			emit('timestart', scope, text, timerCallTime);
-		} else emit('timestartskip', scope, text);
+		} else emit('timestartskip', scope, text, timerCallTime);
 	};
 
 	ret.markTime = text => {
@@ -75,15 +75,15 @@ function logHandler(scope, debugs, debugId, kolor) {
 			);
 
 			emit('timemark', scope, text, timerMarkTime);
-		} else emit('timemarkskip', scope, text);
+		} else emit('timemarkskip', scope, text, timerMarkTime);
 	}
 
 	ret.endTime = text => {
 		if (timerCallTime === null) return;
+		let endTime = new Date().getTime();
 		if (shouldLog(scope)) {
 			const prevMarkTime = timerMarkTime;
 			const firstCallTime = timerCallTime;
-			const endTime = new Date().getTime();
 			timerMarkTime = timerCallTime = null;
 			
 			const previousTimeDiff = endTime - firstCallTime;
@@ -98,7 +98,7 @@ function logHandler(scope, debugs, debugId, kolor) {
 			);
 
 			emit('timeend', scope, text, endTime);
-		} else emit('timeendskip', scope, text);
+		} else emit('timeendskip', scope, text, endTime);
 	}
 
 	return ret;
