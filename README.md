@@ -1,6 +1,8 @@
 # unbug
 
-![Unbug](img/unbug.png)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/unbug?style=flat-square)
+
+![Unbug](https://raw.githubusercontent.com/SiddharthShyniben/unbug/main/img/unbug.png)
 
 Unbug is a tiny debugging utility for Node.js.
 
@@ -59,9 +61,9 @@ We can now use the `DEBUG` environment variable to toggle debugging on and off
 
 Here are some examples:
 
-![unbug http](img/debug-http.png)
-![unbug worker](img/debug-worker.png)
-![unbug with minus](img/debug-minus.png)
+![unbug http](https://raw.githubusercontent.com/SiddharthShyniben/unbug/main/img/debug-http.png)
+![unbug worker](https://raw.githubusercontent.com/SiddharthShyniben/unbug/main/img/debug-worker.png)
+![unbug with minus](https://raw.githubusercontent.com/SiddharthShyniben/unbug/main/img/debug-minus.png)
 
 ### Colors
 
@@ -112,7 +114,7 @@ for (let i = 0; i < 1e9; i++) {}
 time.endTime('finished loop');
 ```
 
-![unbug time](img/debug-timer.png)
+![unbug time](https://raw.githubusercontent.com/SiddharthShyniben/unbug/main/img/debug-timer.png)
 
 ### `DEBUG` variable format
 
